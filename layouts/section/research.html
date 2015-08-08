@@ -1,0 +1,28 @@
+{{ template "theme/chrome/head.html" . }}
+<body>
+
+{{ template "theme/chrome/sidebar.html" . }}
+
+    <div class="content container">
+  <h1 class="title">Research Interests, Codes</h1> 
+  <h2> Areas of Interest </h2>
+  <ul >
+    <li> Fluid Mechanics                   </li>
+    <li> Computational Fluid Dynamics     </li> 
+    <li> Multiphase flows                  </li>
+    <li> Interfaces                        </li> 
+    <li> Fluid Structure Interaction       </li>     
+    <li> FVM, FDM, Meshless methods        </li>     
+    <li> Smoothed Particle Hydrodynamics   </li>      
+  </ul>
+  <hr>
+  <h2> Research Codes </h2>
+    <ul class="posts">
+      {{ range .Data.Pages }}
+      <li><span>{{if .Draft}}[draft] {{end}}<a href="{{ .Permalink }}">{{ .Title }}</a><time class="pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</h4></time></span></span></li>
+      {{ end }}
+  </ul>
+    </div>
+
+  </body>
+</html>

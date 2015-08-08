@@ -1,0 +1,25 @@
+baseurl = "https://prapanchnair.github.io"
+languageCode = "en-us"
+title = "Prapanch Nair"
+theme = "hyde"
+copyright = "Prapanch Nair"
+
+[Author]
+	name = "Prapanch Nair"
+
+[Permalinks]
+	blog = "/:year/:month/:filename/"
+	code = "/:filename/"
+
+[Taxonomies]
+	tag = "tags"
+	series = "series"
+	series-desc = "series-desc"
+
+[params]
+	description = "My locus on the web"
+	twitter = "https://twitter.com/prapanchnair"
+	github = "https://github.com/prapanchnair"
+	gplus = "https://plus.google.com/+prapanch.nair"
+	disqus = "npfio"
+  linkedin="https://in.linkedin.com/in/prapanj"
