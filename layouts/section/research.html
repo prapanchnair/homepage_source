@@ -19,9 +19,20 @@
   <h2> Research Codes </h2>
     <ul class="posts">
       {{ range .Data.Pages }}
+      {{ if eq .Type "code" }}
       <li><span>{{if .Draft}}[draft] {{end}}<a href="{{ .Permalink }}">{{ .Title }}</a><time class="pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</h4></time></span></span></li>
       {{ end }}
+      {{ end }}
   </ul>
+  <hr>
+  <!-- <h2> Publications </h2> -->
+
+      {{ range .Data.Pages }}
+      {{if eq .Type "lop"}}
+      <h2> {{ .Title }} </h2>
+      {{ .Content}}
+      {{end }}
+      {{ end }}
     </div>
 
   </body>
