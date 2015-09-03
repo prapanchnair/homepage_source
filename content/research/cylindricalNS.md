@@ -7,4 +7,4 @@ type = "code"
 +++
 A simple Navier Stokes solver in cylindrical polar coordinates for
 solving flow around cylinder. Code is written in Matlab (also works
-with Octave). Hosted on [github](http://www.github.com). 
+with Octave). Hosted on [github](http://www.github.com/prapanchnair/cylindricalNS). 

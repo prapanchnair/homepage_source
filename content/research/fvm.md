@@ -9,4 +9,4 @@ type = "code"
 +++
 A 2D unstructured grod Finite Volume solver for Euler equations, written in Fortran.
 Grid has to be written in the Cobalt format for unstrucuted grids. Outputs to 
-Tecplot data format. 
+Tecplot data format. Source repo can be found [here](https://github.com/prapanchnair/xfvm) 
